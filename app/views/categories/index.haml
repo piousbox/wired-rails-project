@@ -1,7 +1,32 @@
 
 %h1 Categories Index
 
-%ul
-  - @categories.each do |category|
-    %li= category.inspect
+%ol
+  - @categories.each do |c0| # instead of .each do |key, value|
+    %li
+      = c0[0]
+      %ol
+        - c0[1].each do |c1|
+          %li
+            = c1[0]
+            %ol
+              - c1[1].each do |c2|
+                %li
+                  = c2[0]
+                  %ul
+                    - c2[1].each do |c3|
+                      %li
+                        = c3[0]
+                        %ul
+                          - c3[1].each do |c4|
+                            %li
+                              = c4[0]
+                              %ul
+                                - c4[1].each do |c5|
+                                  %li
+                                    -# = c5[0]
+                                    = link_to c5[0], category_path( c5[1]['link'] )
+                              
+= @categories.inspect
+
     

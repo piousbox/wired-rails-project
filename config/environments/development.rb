@@ -1,7 +1,7 @@
 
 Rails.application.configure do
 
-  config.active_record.table_name_prefix = 'tbx_'
+  # config.active_record.table_name_prefix = 'tbx_' # I define that in each model
   
   # Settings specified here will take precedence over those in config/application.rb.
 
