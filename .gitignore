@@ -18,3 +18,5 @@
 
 *~
 *.trash
+
+config/database.yml

@@ -1,4 +1,8 @@
+
 Rails.application.configure do
+
+  config.active_record.table_name_prefix = 'tbx_'
+  
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
