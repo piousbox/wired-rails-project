@@ -22,5 +22,11 @@ module BjjcollectiveRailsapp2015
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.assets.precompile += [ 'application.css' ]
+    config.assets.precompile += [ 'application.js' ]
+    config.assets.enabled = true
+    config.assets.version = '1.0'
+
   end
 end
