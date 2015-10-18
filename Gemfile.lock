@@ -159,6 +159,7 @@ DEPENDENCIES
   haml
   jbuilder (~> 2.0)
   jquery-rails
+  libv8
   mysql2 (~> 0.3.13)
   rails (= 4.2.4)
   sass-rails (~> 5.0)

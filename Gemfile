@@ -7,9 +7,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'haml'
 gem 'mysql2', '~> 0.3.13'
 gem 'will_paginate'
-
-# See https://github.com/rails/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
+gem 'therubyracer'
+gem 'libv8'
 
 gem 'jquery-rails'
 gem 'turbolinks'
