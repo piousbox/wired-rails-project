@@ -1,0 +1,10 @@
+
+%h1 Category #{@category.name}
+
+%ol
+  - @videos.each do |video|
+    %li
+      = image_tag video.video_thumbnail.thumbnail
+      = link_to video.title, video_path( video )
+
+= will_paginate @videos
