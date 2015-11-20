@@ -13,12 +13,4 @@
 
 ActiveRecord::Schema.define(version: 0) do
 
-  # create_table "categories" do |t|
-  #   t.string :category_id
-  #   t.string :name
-  #   t.string :url_name
-  #   t.text :description
-  #   t.integer :num_videos
-  # end
-  
 end

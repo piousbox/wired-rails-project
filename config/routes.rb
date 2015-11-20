@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
-  # root :to => 'welcome#home'
-  root :to => 'categories#index'
+  root :to => 'welcome#home'
 
   resources :categories
 
@@ -55,4 +54,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  namespace :manager do
+    root :to => 'welcome#home'
+  end
+  
 end
