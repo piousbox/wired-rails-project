@@ -1,3 +1,3 @@
 
-class ManagerController < ApplicationController
+class Manager::ManagerController < ApplicationController
 end
