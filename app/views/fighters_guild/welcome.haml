@@ -1,4 +1,11 @@
 
 .row
   .large-12.columns
-    Welcome to fighters guild
+    %h1 Welcome to fighters guild
+
+    Merit Badges:
+    %ul
+      - @badges.each do |badge|
+        %li= badge.inspect
+        
+    
