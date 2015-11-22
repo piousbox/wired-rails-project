@@ -26,6 +26,10 @@ class Photo
 
   validates_attachment_content_type :photo, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 
+
+  belongs_to :shaded_badge, :class_name => 'MeritBadge', :inverse_of => :shaded_photo
+  belongs_to :accomplished_badge, :class_name => 'MeritBadge', :inverse_of => :accomplished_photo
+  
   set_callback(:create, :before) do |doc|
 #    if doc.is_public
 #      Site.languages.each do |lang|

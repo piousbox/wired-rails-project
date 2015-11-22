@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   #            }
 
   namespace :manager do
-    resources :merit_badges
+    resources :merit_badges, :as => :badges
     resources :users
     resources :questsets
   end
