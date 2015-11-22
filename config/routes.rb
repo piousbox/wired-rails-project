@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   resources :videos
 
+  get 'fighters-guild' => 'fighters_guild#welcome', :as => :fg_root
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
