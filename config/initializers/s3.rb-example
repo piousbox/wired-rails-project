@@ -1,0 +1,21 @@
+if Rails.env == "production" 
+  S3_CREDENTIALS = { 
+    :access_key_id => "some-access-key", 
+    :secret_access_key => "some-secret-key", 
+    :bucket => "ISh-development"
+  }
+elsif Rails.env == 'test'
+  S3_CREDENTIALS = { 
+    :access_key_id => "aaa", 
+    :secret_access_key => "bbb", 
+    :bucket => "ISh-test"
+  }
+else
+  S3_CREDENTIALS = { 
+    :access_key_id => "ccc", 
+    :secret_access_key => "the-d", 
+    :bucket => "ISh-development"
+  }
+end
+
+
