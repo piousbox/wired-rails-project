@@ -12,7 +12,18 @@ Rails.application.routes.draw do
   devise_for :users, controllers: {
                sessions: 'users/sessions'
              }
-  # devise_for :users, path: "auth", path_names: { sign_in: 'login', sign_out: 'logout', password: 'secret', confirmation: 'verification', unlock: 'unblock', registration: 'register', sign_up: 'cmon_let_me_in' }
+  # devise_for :users, path: "auth", path_names: {
+  #              sign_in: 'login', sign_out: 'logout', password: 'secret', confirmation: 'verification',
+  #              unlock: 'unblock', registration: 'register', sign_up: 'cmon_let_me_in'
+  #            }
+
+  namespace :manager do
+    resources :merit_badges
+    resources :users
+    resources :questsets
+  end
+
+
   
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -35,12 +46,6 @@ Rails.application.routes.draw do
   #     end
   #   end
 
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
   # Example resource route with more complex sub-resources:
   #   resources :products do
   #     resources :comments
@@ -55,14 +60,7 @@ Rails.application.routes.draw do
   #   end
   #   resources :posts, concerns: :toggleable
   #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
-
+  
   namespace :manager do
     root :to => 'welcome#home'
   end
