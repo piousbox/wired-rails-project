@@ -22,3 +22,5 @@
 config/database.yml
 
 config/initializers/s3.rb
+
+vendor/bundle
