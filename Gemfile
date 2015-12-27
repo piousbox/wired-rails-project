@@ -21,14 +21,11 @@ gem "paperclip", "~> 4.3"
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'aws-sdk', '< 2.0'
 gem "aws-s3",            :require => "aws/s3"
+gem 'rspec-rails', '~> 3.0'
 
 group :production do
   gem 'mysql2', '~> 0.3.13'
   gem 'unicorn'
-end
-
-group :development, :test do
-  gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
