@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'mongoid', '~> 5.0.0'
 gem 'devise'
+
 gem "paperclip", "~> 4.3"
 gem "mongoid-paperclip", :require => "mongoid_paperclip"
 gem 'aws-sdk', '< 2.0'
